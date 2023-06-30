@@ -287,3 +287,43 @@ function limpiar(){
 	document.getElementById("tabletext3").value='';
 }
 
+
+var empleados = [];
+
+document.getElementById("formulario").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    var nombre = document.getElementById("nombre").value;
+    var apellido = document.getElementById("apellido").value;
+    var nivel1 = document.getElementById("nivel1").value;
+    var nivel2 = document.getElementById("nivel2").value;
+    var nivel3 = document.getElementById("nivel3").value;
+
+    var empleado = {
+        nombre: nombre,
+        apellido: apellido,
+        niveles: [nivel1, nivel2, nivel3]
+    };
+
+    empleados.push(empleado);
+
+    document.getElementById("nombre").value = "";
+    document.getElementById("apellido").value = "";
+    document.getElementById("nivel1").value = "";
+    document.getElementById("nivel2").value = "";
+    document.getElementById("nivel3").value = "";
+
+    mostrarInformacion(empleados.length - 1);
+});
+
+function mostrarInformacion(index) {
+    var empleado = empleados[index];
+
+    var mensaje = "Nombre: " + empleado.nombre + "\n";
+    mensaje += "Apellido: " + empleado.apellido + "\n";
+    mensaje += "Educacion Primaria: " + empleado.niveles[0] + "\n";
+    mensaje += "Educacion Secundaria: " + empleado.niveles[1] + "\n";
+    mensaje += "Educacion Superior: " + empleado.niveles[2] + "\n";
+
+    alert(mensaje);
+}

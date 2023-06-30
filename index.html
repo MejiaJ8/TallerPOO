@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+</head>
+
+<body>
+	<div id="principal">
+		
+		 <br><h1>Sistema De Empleados</h1>
+		 <h2>Datos Personales</h2>
+			<tr>
+
+				<td>
+					<img "heigth = "150" width="100" src="img\foto.jpg" heigth = "150" width="100"> <br><br>
+				</td>
+
+
+
+				<td>
+					<div>
+						<label for="nombre">Nombre:</label>
+						<input type="text" id="nombre" size="25">	
+					</div> <br>
+
+					<div>
+						<label for="apellido">Apellido:</label>
+						<input type="text" id="apellido" size="25">	
+					</div> <br>
+
+					<div>
+						<label for="sexo">Sexo:</label>
+						<select id="sexo" name="sexo">
+	          			<option disabled selected id="sexo" >Seleccione género</option>
+	          			<option>Hombre</option>
+	          			<option>Mujer</option>
+	          			<option>Otro</option>
+	          			</select>
+
+					</div> <br>
+
+					<div>
+						<label for="fechaNacimiento">Fecha de Nacimineto:</label>
+						<input type="date" id="fechaNacimiento" min="1940-01-01" max="2023-06-30">	
+					</div> <br>
+
+					<div>
+						<label for="fechaIngreso">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fecha de Ingreso:</label>
+						<input type="date" id="fechaIngreso" min="1940-01-01" max="2023-06-30">	
+					</div>
+		
+				</td>
+				
+			</tr>
+	    
+			<section>
+			 <h2>Salario</h2>
+
+				<div>
+					<label for="salario">Salario:</label>
+					<input type="text" id="salario" size="12">
+					<input type="button" value="Modificar" id="modificar">	
+				</div>
+			</section>
+
+			 <h2>Cálculos</h2>
+
+				<div>
+					<table table align="center">
+						<tr>
+							<td>
+								<input type="button" id="btncaledad" value="       Calcular Edad       ">	
+									
+							</td>
+							<td id="tabletext1">
+								<font id="edad"></font>
+							</td>
+						</tr>
+					</table>
+							
+				</div><br>
+
+				
+				<div>
+			
+					<table table align="center">
+						<tr>
+							<td>
+								<input type="submit" id="btncalanti" value="  Calcular Antiguedad  ">
+									
+							</td>
+							<td id="tabletext2">
+								<font id="ingreso"></font>
+							</td>
+						</tr>
+					</table>		
+				</div><br>
+
+				<div>
+				
+					<table table align="center">
+						<tr>
+							<td>
+								<input type="button" id="prestaciones" value="Calcular Prestaciones">
+									
+							</td>
+							<td id="tabletext3">
+								<font id="textprest"></font>
+							</td>
+						</tr>
+					</table>		
+				</div><br>
+						
+		
+			 <h2>Puntos de Extensión</h2>
+
+				<div>
+					<input type="button" id="boton1" value="Opcion 1">			
+					<input type="submit" id="boton2" value="Opcion 2">		
+				</div>	
+
+	</div>
+
+</body>
+</html>
